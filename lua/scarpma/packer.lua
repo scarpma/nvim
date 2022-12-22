@@ -50,6 +50,7 @@ return require('packer').startup(function(use)
   -- -- Theme inspired by Atom
   -- use 'navarasu/onedark.nvim'
 
+  -- rose-pine is another color-scheme from the primagean
   use({
     'rose-pine/neovim',
     as = 'rose-pine',

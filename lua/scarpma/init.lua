@@ -1,3 +1,4 @@
+require("scarpma.packer")
 require("scarpma.remap")
 require("scarpma.set")
 require("scarpma.remap")
