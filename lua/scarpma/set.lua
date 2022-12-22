@@ -1,4 +1,5 @@
 -- line numbers
+
 vim.opt.nu = true
 
 -- tabstop
