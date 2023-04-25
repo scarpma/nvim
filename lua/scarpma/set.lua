@@ -19,3 +19,12 @@ vim.opt.colorcolumn = "80"
 
 -- Set colorscheme
 vim.o.termguicolors = true
+
+vim.api.nvim_create_autocmd({"BufReadPost"}, {
+    pattern = {"*"},
+    callback = function()
+        if vim.fn.line("'\"") > 1 and vim.fn.line("'\"") <= vim.fn.line("$") then
+            vim.fn.nvim_exec("normal! g'\"",false)
+        end
+    end
+})
